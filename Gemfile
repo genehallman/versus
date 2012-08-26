@@ -5,7 +5,7 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem "mysql", "~> 2.8.1"
 gem 'devise'
 gem 'will_paginate', '~> 3.0'
 
@@ -15,6 +15,10 @@ group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
+end
+
+group :development do
+  gem 'sqlite3'
 end
 
 gem 'jquery-rails'
