@@ -1,0 +1,17 @@
+<% if !flash[:alert].nil? and flash[:alert].to_s.strip.length > 0 %>
+	<div class="row-fluid">
+		<div class="alert alert-error">
+		  <button type="button" class="close" data-dismiss="alert">×</button>
+		  <%= raw(flash[:alert]) %>
+		</div>
+	</div>
+<% end %>
+
+<% if !flash[:notice].nil? and flash[:notice].to_s.strip.length > 0%>
+	<div class="row-fluid">
+		<div class="alert">
+		  <button type="button" class="close" data-dismiss="alert">×</button>
+		  <%= raw(flash[:notice]) %>
+		</div>
+	</div>
+<% end %>

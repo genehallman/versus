@@ -1,0 +1,11 @@
+
+<div class="row-fluid">
+	<button class="btn btn-primary pull-right" type="button" data-toggle="modal" data-target="#recordMatchModal">Record Match</button>
+</div>
+<div class="row-fluid">
+	<ul class="leaderboard unstyled">
+	<% @users.each_with_index do |user,i|  %>
+		<%=render :partial => "leaderboard_entry", :locals => {:user => user, :position => i+1}%>
+	<% end %>
+	</ul>
+</div>

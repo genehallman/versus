@@ -1,0 +1,29 @@
+.leaderboard-entry {
+	border-bottom:1px solid #eee;
+	&:last-of-type {
+		border-bottom:none;
+	}
+	div, span {
+		line-height:50px;
+		height:50px;
+		vertical-align:middle;
+	}
+	.position {
+		text-align:center;
+	}
+	.score {
+		font-size:40px;
+		color:#08C;
+	}
+	.name {
+		font-size:30px;
+		font-weight:bold;
+		.email {
+			font-size:14px;
+			color:#999;
+		}
+	}
+	.info {
+	
+	}
+}
