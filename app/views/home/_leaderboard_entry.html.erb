@@ -1,8 +1,8 @@
 <li class="row-fluid leaderboard-entry">
 	<div class="span2 position"><%=position%></div>
 	<div class="span2 score"><%=user.score%></div>
-	<div class="span4 name"><%=user.display_name%> <span class="email">(<%=user.email%>)</span></div>
-	<div class="span4 info">
+	<div class="span5 name"><%=user.display_name%> <span class="email">(<%=user.email%>)</span></div>
+	<div class="span3 info">
 		<% matches = user.last_matches(3) %>
 		<% matches.each do |m| %>
 			<% if m.winner_id == user.id %>
