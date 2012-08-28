@@ -2,7 +2,8 @@
 	<div class="span2 position"><%=position%></div>
 	<div class="span2 score"><%=user.score%></div>
 	<div class="span5 name"><%=user.display_name%> <span class="email">(<%=user.email%>)</span></div>
-	<div class="span3 info">
+	<div class="span1 total_record">(<%=user.matches_won.count%> - <%=user.matches_lost.count%>)</div>
+	<div class="span2 info">
 		<% matches = user.last_matches(6) %>
 		<% matches.each do |m| %>
 			<% if m.winner_id == user.id %>
